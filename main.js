@@ -37,6 +37,7 @@ app.get('/weebly/oauth', function(req, res){
 
 app.get('/weebly/authorize', function(req,res){
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
+    var $res = res;
 
     console.log(req.query.authorization_code);
     var post_form = {
@@ -47,7 +48,7 @@ app.get('/weebly/authorize', function(req,res){
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         //save access token
-        res.redirect(body.callback_url);
+        $res.redirect(body.callback_url);
     });
 });
 
