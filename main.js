@@ -12,7 +12,10 @@ var weebly_secret = "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094
 
 var app = express();
 
+var port = process.env.PORT || 8080;
+
 app.get('/weebly/oauth', function(req, res){
+    debugger;
     var user_id = req.query.user_id;
     var site_id = req.query.site_id;
     var timestamp = req.query.timestamp;
@@ -34,7 +37,7 @@ app.get('/weebly/oauth', function(req, res){
 });
 
 app.get('/weebly/authorize', function(req,res){
-
+    debugger;
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
 
     var post_form = {
@@ -61,8 +64,8 @@ app.get('/', function(req, res){
     res.end();
 });
 
-app.listen('9876');
-console.log('Listening on 9876');
+app.listen(port);
+console.log('Listening on' + port);
 
 exports = module.exports = app;
 
