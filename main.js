@@ -57,6 +57,10 @@ app.get('/weebly/admin', function(req, res){
     res.json("{result: true}")
 });
 
+app.get('/', function(req, res){
+    res.end();
+});
+
 app.listen('9876');
 console.log('Listening on 9876');
 
