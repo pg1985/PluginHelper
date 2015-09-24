@@ -15,12 +15,13 @@ var app = express();
 var port = process.env.PORT || 8080;
 
 app.get('/weebly/oauth', function(req, res){
-    debugger;
     var user_id = req.query.user_id;
     var site_id = req.query.site_id;
     var timestamp = req.query.timestamp;
     var hmac = req.query.hmac;
     var callback = req.query.callback_url;
+
+    var pushup_callback = "http://weeblyoauth.herokuapp.com/weebly/authorize";
     
     //var hash_string = "user_id=" + user_id + "&timestamp=" + req.query.timestamp + "&site_id=" + site_id;
     //
@@ -28,14 +29,13 @@ app.get('/weebly/oauth', function(req, res){
     //crypted_hash.update('hash_string');
     //console.log(crypted_hash);
 
-    var redirect_url = "https://www.weebly.com/app-center/oauth/authorize?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + callback;
+    var redirect_url = callback + "?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + pushup_callback;
 
     res.redirect(redirect_url);
 
 });
 
 app.get('/weebly/authorize', function(req,res){
-    debugger;
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
 
     console.log(req.query.authorization_code);
@@ -56,7 +56,6 @@ app.get('/weebly/authorize', function(req,res){
 });
 
 app.get('/weebly/admin', function(req, res){
-    debugger;
     res.json("{result: true}")
 });
 
