@@ -45,7 +45,7 @@ app.get('/weebly/authorize', function(req,res){
         authorization_code: req.query.authorization_code
     };
 
-    request.post({url:post_url, form: post_form}, function(err,res,body){
+    request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         console.log(res);
         console.log(body);
     });
