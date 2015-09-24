@@ -1,0 +1,15 @@
+{
+  "name": "Pushup-Plugin-Helper",
+  "version": "0.0.1",
+  "description": "A Helper for Pushup plugins",
+  "scripts": {
+  "start": "node main.js"
+  },
+  "author": "Patrick Guffey",
+  "dependencies": {
+    "crypto": "0.0.3",
+    "express": "^4.13.3",
+    "request": "^2.63.0",
+    "url": "^0.11.0"
+  }
+}
