@@ -54,7 +54,7 @@ app.get('/weebly/authorize', function(req,res){
 });
 
 app.get('/weebly/admin', function(req, res){
-    //return admin html
+    res.json("{result: true}")
 });
 
 app.listen('9876');
