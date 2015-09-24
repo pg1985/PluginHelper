@@ -40,9 +40,10 @@ app.get('/weebly/authorize', function(req,res){
     debugger;
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
 
+    console.log(req.query.authorization_code);;
     var post_form = {
         client_id:"853814272",
-        client_secret: weebly_secret,
+        client_secret: "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094345be",
         authorization_code: req.query.authorization_code
     };
 
