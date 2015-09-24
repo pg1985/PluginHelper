@@ -46,13 +46,9 @@ app.get('/weebly/authorize', function(req,res){
     };
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
-        console.log(res);
-        console.log(body);
+        //save access token
+        res.redirect(body.callback_url);
     });
-
-
-
-    return res.json()
 });
 
 app.get('/weebly/admin', function(req, res){
