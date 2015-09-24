@@ -38,7 +38,7 @@ app.get('/weebly/oauth', function(req, res){
 });
 
 app.get('/weebly/authorize', function(req,res){
-    debugger;
+    console.log("Hello");
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
 
     console.log(req.query.authorization_code);;
