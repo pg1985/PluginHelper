@@ -28,7 +28,7 @@ app.get('/weebly/oauth', function(req, res){
     //crypted_hash.update('hash_string');
     //console.log(crypted_hash);
 
-    var redirect_url = "https://www.weebly.com/app-center/oauth/authorize?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + callback_url;
+    var redirect_url = "https://www.weebly.com/app-center/oauth/authorize?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + callback;
 
     res.redirect(redirect_url);
 
