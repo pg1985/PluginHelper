@@ -30,18 +30,15 @@ app.get('/weebly/oauth', function(req, res){
 
     var redirect_url = "https://www.weebly.com/app-center/oauth/authorize?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + callback;
 
-    console.log("Redirecting...\n*****\n*******\n********");
     res.redirect(redirect_url);
 
-    //console.log(crypted_hash === hmac);
-    
 });
 
 app.get('/weebly/authorize', function(req,res){
-    console.log("Hello");
+    debugger;
     var post_url = "https://www.weebly.com/app-center/oauth/access_token";
 
-    console.log(req.query.authorization_code);;
+    console.log(req.query.authorization_code);
     var post_form = {
         client_id:"853814272",
         client_secret: "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094345be",
@@ -59,6 +56,7 @@ app.get('/weebly/authorize', function(req,res){
 });
 
 app.get('/weebly/admin', function(req, res){
+    debugger;
     res.json("{result: true}")
 });
 
