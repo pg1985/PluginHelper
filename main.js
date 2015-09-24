@@ -30,6 +30,7 @@ app.get('/weebly/oauth', function(req, res){
 
     var redirect_url = "https://www.weebly.com/app-center/oauth/authorize?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + callback;
 
+    console.log("Redirecting...\n*****\n*******\n********");
     res.redirect(redirect_url);
 
     //console.log(crypted_hash === hmac);
