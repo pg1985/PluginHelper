@@ -50,7 +50,6 @@ app.get('/weebly/authorize', function(req,res){
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         console.log(res.toJSON());
-        $res.redirect(body.callback_url);
     });
 
     res.redirect("https://www.weebly.com/app-center/oauth/finish?client_id=" + weebly_client);
