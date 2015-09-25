@@ -52,7 +52,8 @@ app.get('/weebly/authorize', function(req,res){
 
 app.get('/weebly/decode', function(req, res){
     var data = jwt_decode(req.query.jwt_token + "");
-    res.end(data);
+    console.log(data);
+    res.json(data);
 });
 
 app.listen(port);
