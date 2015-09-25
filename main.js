@@ -39,9 +39,8 @@ app.get('/weebly/oauth', function(req, res){
 
 app.get('/weebly/authorize', function(req,res){
 
-    var $res = res;
+    console.log(req.query);
 
-    console.log(req.query.authorization_code);
     var post_form = {
         client_id: weebly_client,
         client_secret: weebly_secret,
@@ -49,7 +48,7 @@ app.get('/weebly/authorize', function(req,res){
     };
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
-        console.log(res.toJSON());
+        console.log(body);
     });
 
     res.redirect("https://www.weebly.com/app-center/oauth/finish?client_id=" + weebly_client);
