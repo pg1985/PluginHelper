@@ -52,8 +52,8 @@ app.get('/weebly/authorize', function(req,res){
     });
 });
 
-app.get('/weebly/admin', function(req, res){
-    res.json("{result: true}")
+app.get('/weebly/*', function(req, res){
+    res.json(req.body)
 });
 
 app.get('/', function(req, res){
