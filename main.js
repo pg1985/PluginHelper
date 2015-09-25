@@ -39,6 +39,8 @@ app.get('/weebly/oauth', function(req, res){
 
 app.get('/weebly/authorize', function(req,res){
 
+    debugger;
+
     var $res = res;
 
     console.log(req.query.authorization_code);
