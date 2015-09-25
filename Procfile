@@ -1,1 +1,1 @@
-web: node --debug=$PORT main.js
+web: node main.js
