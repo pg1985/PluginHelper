@@ -9,6 +9,7 @@ var crypto = require('crypto');
 var weebly = require('./lib/weebly.js');
 
 var weebly_secret = "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094345be";
+var weebly_client = "853814272";
 
 var app = express();
 
@@ -29,7 +30,7 @@ app.get('/weebly/oauth', function(req, res){
     //crypted_hash.update('hash_string');
     //console.log(crypted_hash);
 
-    var redirect_url = callback + "?client_id=853814272&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + pushup_callback;
+    var redirect_url = callback + "?client_id=" + weebly_client + "&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + pushup_callback;
 
     res.redirect(redirect_url);
 
@@ -41,14 +42,14 @@ app.get('/weebly/authorize', function(req,res){
 
     console.log(req.query.authorization_code);
     var post_form = {
-        client_id:"853814272",
-        client_secret: "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094345be",
+        client_id: weebly_client,
+        client_secret: weebly_secret,
         authorization_code: req.query.authorization_code
     };
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         //save access token
-        console.log(res);
+        console.log(res.toJSON);
         $res.redirect(body.callback_url);
     });
 });
