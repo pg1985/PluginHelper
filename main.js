@@ -6,7 +6,7 @@ var request = require('request');
 var url = require('url');
 var crypto = require('crypto');
 var Q = require('q');
-var jwt_decode = require('jwt_decode');
+var jwt_decode = require('jwt-decode');
 
 var Weebly = require('./lib/weebly.js');
 var weebly =  new Weebly();
