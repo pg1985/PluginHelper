@@ -6,6 +6,7 @@ var request = require('request');
 var url = require('url');
 var crypto = require('crypto');
 var Q = require('q');
+var jwt_decode = require('jwt_decode');
 
 var Weebly = require('./lib/weebly.js');
 var weebly =  new Weebly();
@@ -49,12 +50,9 @@ app.get('/weebly/authorize', function(req,res){
     res.redirect("https://www.weebly.com/app-center/oauth/finish?client_id=" + weebly.getClientID());
 });
 
-app.get('/weebly/*', function(req, res){
-    res.json(req.body)
-});
-
-app.get('/', function(req, res){
-    res.end();
+app.get('/weebly/decode', function(req, res){
+    var data = jwt_decode(req.query.jwt_token);
+    res.end(data);
 });
 
 app.listen(port);
