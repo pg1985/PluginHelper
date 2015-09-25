@@ -5,6 +5,7 @@ var express = require('express');
 var request = require('request');
 var url = require('url');
 var crypto = require('crypto');
+var Q = require('q');
 
 var weebly = require('./lib/weebly.js');
 
@@ -49,7 +50,7 @@ app.get('/weebly/authorize', function(req,res){
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         //save access token
-        console.log(res.toJSON);
+        console.log(res.toJSON());
         $res.redirect(body.callback_url);
     });
 });
