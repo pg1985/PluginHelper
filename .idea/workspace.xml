@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+              <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -57,10 +57,10 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.625">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <marker date="1443197980000" expanded="true" signature="0:392" placeholder="{&quot;name&quot;: &quot;Pushup-Plugin-Helper&quot;...}" />
-                <marker date="1443197980000" expanded="true" signature="237:390" placeholder="{&quot;crypto&quot;: &quot;0.0.3&quot;...}" />
+                <marker date="1443207822000" expanded="true" signature="0:422" placeholder="{&quot;name&quot;: &quot;Pushup-Plugin-Helper&quot;...}" />
+                <marker date="1443207822000" expanded="true" signature="237:420" placeholder="{&quot;crypto&quot;: &quot;0.0.3&quot;...}" />
               </folding>
             </state>
           </provider>
@@ -69,8 +69,8 @@
       <file leaf-file-name="weebly.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/weebly.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5810056">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24581006">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc;n#Weebly#0" expanded="false" />
               </folding>
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/lib/community.js" />
         <option value="$PROJECT_DIR$/Procfile" />
-        <option value="$PROJECT_DIR$/lib/weebly.js" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/lib/weebly.js" />
       </list>
     </option>
   </component>
@@ -108,7 +108,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
+    <option name="x" value="10" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="669" />
@@ -224,7 +224,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="23" width="1260" height="669" extended-state="0" />
+    <frame x="10" y="23" width="1260" height="669" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24939467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -257,10 +257,10 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <marker date="1443197980000" expanded="true" signature="0:392" placeholder="{&quot;name&quot;: &quot;Pushup-Plugin-Helper&quot;...}" />
-            <marker date="1443197980000" expanded="true" signature="237:390" placeholder="{&quot;crypto&quot;: &quot;0.0.3&quot;...}" />
+            <marker date="1443207822000" expanded="true" signature="0:422" placeholder="{&quot;name&quot;: &quot;Pushup-Plugin-Helper&quot;...}" />
+            <marker date="1443207822000" expanded="true" signature="237:420" placeholder="{&quot;crypto&quot;: &quot;0.0.3&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -286,15 +286,15 @@
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/weebly.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5810056">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24581006">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc;n#Weebly#0" expanded="false" />
           </folding>
