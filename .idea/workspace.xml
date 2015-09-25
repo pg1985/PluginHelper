@@ -34,8 +34,8 @@
       <file leaf-file-name="weebly.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/weebly.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.3888889">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.3888889">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding>
                 <element signature="n#!!doc;n#Weebly#0" expanded="false" />
               </folding>
@@ -258,8 +258,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/weebly.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.3888889">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3888889">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding>
             <element signature="n#!!doc;n#Weebly#0" expanded="false" />
           </folding>
