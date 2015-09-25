@@ -45,9 +45,8 @@ app.get('/weebly/authorize', function(req,res){
     };
 
     var token_result = weebly.getAccessToken(req.query.callback_url, post_form);
-    console.log(token_result);
-    var callback_url = token_result.callback_url;
-    res.redirect(callback_url);
+
+    res.redirect("https://www.weebly.com/app-center/oauth/finish?client_id=" + weebly.getClientID());
 });
 
 app.get('/weebly/*', function(req, res){
