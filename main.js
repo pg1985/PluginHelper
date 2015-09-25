@@ -38,6 +38,7 @@ app.get('/weebly/oauth', function(req, res){
 });
 
 app.get('/weebly/authorize', function(req,res){
+
     var $res = res;
 
     console.log(req.query.authorization_code);
@@ -49,6 +50,7 @@ app.get('/weebly/authorize', function(req,res){
 
     request.post({url:req.query.callback_url, form: post_form}, function(err,res,body){
         //save access token
+        debugger;
         console.log(res.toJSON());
         $res.redirect(body.callback_url);
     });
