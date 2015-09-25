@@ -44,6 +44,8 @@ app.get('/weebly/authorize', function(req,res){
         authorization_code: req.query.authorization_code
     };
 
+    console.log(post_form);
+
     var token_result = weebly.getAccessToken(req.query.callback_url, post_form);
     console.log(token_result);
     var callback_url = token_result.callback_url;
