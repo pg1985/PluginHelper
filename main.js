@@ -7,11 +7,9 @@ var url = require('url');
 var crypto = require('crypto');
 var Q = require('q');
 
-var weebly = require('./lib/weebly.js');
-var community = require('./lib/community.js');
-
-var weebly_secret = "a2a3e2f7b96f0d4c3e887e886dc33e38bb96ab48a2b070a9afb3f6c1094345be";
-var weebly_client = "853814272";
+var Weebly = require('./lib/weebly.js');
+var weebly =  new Weebly();
+var Community = require('./lib/community.js');
 
 var app = express();
 
@@ -32,7 +30,7 @@ app.get('/weebly/oauth', function(req, res){
     //crypted_hash.update('hash_string');
     //console.log(crypted_hash);
 
-    var redirect_url = callback + "?client_id=" + weebly_client + "&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + pushup_callback;
+    var redirect_url = callback + "?client_id=" + weebly.getClientID() + "&user_id="+user_id+"&site_id="+site_id+"&scope=read:site&redirect_uri=" + pushup_callback;
 
     res.redirect(redirect_url);
 
