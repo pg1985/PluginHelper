@@ -10,6 +10,7 @@
   "dependencies": {
     "crypto": "0.0.3",
     "express": "^4.13.3",
+    "jsonwebtoken": "^5.0.5",
     "jwt-decode": "^1.4.0",
     "q": "^1.4.1",
     "request": "^2.63.0",
