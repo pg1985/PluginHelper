@@ -38,7 +38,6 @@ app.get('/weebly/oauth', function(req, res){
 });
 
 app.get('/weebly/authorize', function(req,res){
-    var post_url = "https://www.weebly.com/app-center/oauth/access_token";
     var $res = res;
 
     console.log(req.query.authorization_code);
@@ -53,6 +52,8 @@ app.get('/weebly/authorize', function(req,res){
         console.log(res.toJSON());
         $res.redirect(body.callback_url);
     });
+
+
 });
 
 app.get('/weebly/*', function(req, res){
