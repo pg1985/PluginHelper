@@ -53,7 +53,7 @@ app.get('/weebly/authorize', function(req,res){
 
 app.get('/weebly/decode', function(req, res){
     var data = jwt_decode(req.query.jwt_token + "");
-    var data2 = jwtDecode(req.query.jwt_token, weebly.getSecret());
+    var data2 = jwtDecode.verify(req.query.jwt_token, weebly.getSecret());
     console.log("Data decoded without secret");
     console.log(data);
     console.log('data decoded WITH secret');
