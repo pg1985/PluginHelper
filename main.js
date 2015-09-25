@@ -39,8 +39,8 @@ app.get('/weebly/oauth', function(req, res){
 app.get('/weebly/authorize', function(req,res){
 
     var post_form = {
-        client_id: weebly_client,
-        client_secret: weebly_secret,
+        client_id: weebly.getClientID(),
+        client_secret: weebly.getSecret(),
         authorization_code: req.query.authorization_code
     };
 
